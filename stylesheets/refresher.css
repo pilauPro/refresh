@@ -3,18 +3,17 @@ h1{
 	font-size: 100px;
 	text-align: center;
 	position: relative;
-	top: 50px;
+	top: 20px;
 	color: lightblue;
 }
 
 .row{
-	background-color: green;
+	position: relative;
+	margin-left: 10px;
 }
 
 .square{
 	display: inline-block;
-	height: 50px;
-	width: 100px;
 	background-color: lightblue;
 	border: 1px solid black;
 }
