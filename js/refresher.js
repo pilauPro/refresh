@@ -6,7 +6,7 @@ var main = function(){
 	var height = 600 / rows
 
 	for (var i = 0; i < rows; i++){
-		$('h1').after('<div class=\'row\'></div>')
+		$('.menu').after('<div class=\'row\'></div>')
 	}
 
 	for (var i = 0; i < squares; i++){
@@ -20,6 +20,11 @@ var main = function(){
 	$('.square').mouseenter(function(){
 		$(this).css('background-color', 'green');
 	});
+
+	$('#draw').click(function(){
+		alert("hi");
+	});
+
 }
 
 $(document).ready(main)

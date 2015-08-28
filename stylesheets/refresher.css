@@ -7,13 +7,14 @@ h1{
 	color: lightblue;
 }
 
-.row{
-	position: relative;
-	margin-left: 10px;
-}
-
 .square{
 	display: inline-block;
 	background-color: lightblue;
 	border: 1px solid black;
+}
+
+#format{
+	position: relative;
+	left: 50px;
+	font-size: 200px;
 }
