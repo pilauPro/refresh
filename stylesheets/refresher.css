@@ -1,5 +1,8 @@
-h1{
+*{
 	font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1{
 	font-size: 100px;
 	text-align: center;
 	position: relative;
@@ -7,14 +10,18 @@ h1{
 	color: lightblue;
 }
 
+.menu{
+	border: 1px solid black;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+p{
+	display: inline-block;
+}
+
 .square{
 	display: inline-block;
 	background-color: lightblue;
 	border: 1px solid black;
-}
-
-#format{
-	position: relative;
-	left: 50px;
-	font-size: 200px;
 }
