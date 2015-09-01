@@ -1,4 +1,10 @@
 var main = function(){
+	// $('input:text').click(function(){
+	// 	$(this).val('')
+	// });
+	$('input:text').focus(function(){
+		$(this).val('')
+	});
 	$('#draw').click(function(){
 		var shape = $('input:radio[name=shape]:checked').val()
 		var rows = $('input:text[name=rows]').val();
@@ -24,7 +30,7 @@ var main = function(){
 		if (shape == 'squares'){
 			$('.square').css('border-radius', '5%');
 		}
-		else if (shape = 'circles'){
+		else if (shape == 'circles'){
 			$('.square').css('border-radius', '100%');
 		}
 
