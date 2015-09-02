@@ -1,18 +1,9 @@
-var main = function(){
-	// $('input:text').click(function(){
-	// 	$(this).val('')
-	// });
-	$('input:text').focus(function(){
-		$(this).val('')
-	});
-	$('#draw').click(function(){
-		var shape = $('input:radio[name=shape]:checked').val()
-		var rows = $('input:text[name=rows]').val();
-		var elements = $('input:text[name=elements]').val();
+var drawGrid = function(rows, elements){
 
 		var width = 1300 / elements
 		var height = 800 / rows
-
+		
+		$('.row').remove()
 
 		for (var i = 0; i < rows; i++){
 			$('.menu').after('<div class=\'row\'></div>')
@@ -25,20 +16,45 @@ var main = function(){
 		$('.square').css({
 			width: width,
 			height: height
-		});
+		})
+}
 
-		if (shape == 'squares'){
-			$('.square').css('border-radius', '5%');
-		}
-		else if (shape == 'circles'){
-			$('.square').css('border-radius', '100%');
-		}
+var gridShape = function(shape){
+	if (shape == 'squares'){
+		$('.square').css('border-radius', '5%')
+	}
+	else if (shape == 'circles'){
+		$('.square').css('border-radius', '100%')
+	}
 
+}
 
-		$('.square').mouseenter(function(){
-			$(this).css('background-color', 'green')
-		});
-	});
+var colorGrid = function(){
+	$('.square').mouseenter(function(){
+		$(this).css('background-color', 'green')
+	})
+}
+
+var main = function(){
+
+	drawGrid(10,40)
+	colorGrid()
+
+	$('input:text').focus(function(){
+		$(this).val('')
+	})
+
+	$('#draw').click(function(){
+
+		var shape = $('input:radio[name=shape]:checked').val()
+		var rows = $('input:text[name=rows]').val()
+		var elements = $('input:text[name=elements]').val()
+
+		drawGrid(rows, elements)
+		gridShape(shape)
+		colorGrid()
+
+	})
 }
 
 $(document).ready(main)
