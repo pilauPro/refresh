@@ -40,6 +40,10 @@ var main = function(){
 	drawGrid(10,40)
 	colorGrid()
 
+	$('#dropdownMenu1').click(function(){
+		$('.dropdown-menu').toggle()
+	})
+
 	$('input:text').focus(function(){
 		$(this).val('')
 	})
