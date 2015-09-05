@@ -2,12 +2,21 @@
 	font-family: 'Ek Mukta', sans-serif;
 }
 
+#dropdownMenu1{
+	background-color: lightblue;
+	color: white;
+}
+
 h1{
 	font-size: 100px;
 	text-align: center;
 	position: relative;
 	top: 20px;
 	color: lightblue;
+}
+
+h1:hover{
+	color: black;
 }
 
 .menu{

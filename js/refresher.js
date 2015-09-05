@@ -36,13 +36,21 @@ var colorGrid = function(){
 }
 
 var main = function(){
-
 	drawGrid(10,40)
 	colorGrid()
 
-	$('#dropdownMenu1').click(function(){
-		$('.dropdown-menu').toggle()
+	$('#dropdownMenu1').mouseenter(function(){
+		dropdown = $('.dropdown-menu');
+		if(dropdown.css("display") == "none"){
+			dropdown.show();
+		}
+		else{
+			dropdown.hide();
+		}
 	})
+	$('.dropdown-menu').mouseleave(function() {
+		$(this).hide()
+	});
 
 	$('input:text').focus(function(){
 		$(this).val('')
