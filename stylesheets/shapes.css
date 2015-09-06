@@ -2,6 +2,14 @@
 	font-family: 'Ek Mukta', sans-serif;
 }
 
+.square-control{
+	display: inline-block;
+	width: 100px;
+	height: 20px;
+	border: 1px solid black;
+	background-color: black;
+}
+
 .square{
 	display: inline-block;
 	position: relative;
