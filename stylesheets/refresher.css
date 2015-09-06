@@ -5,6 +5,9 @@
 #dropdownMenu1{
 	background-color: lightblue;
 	color: white;
+	border: none;
+	width: 100px;
+	border-radius: 0;
 }
 
 h1{
@@ -13,6 +16,7 @@ h1{
 	position: relative;
 	top: 20px;
 	color: lightblue;
+	border: 1px solid black;
 }
 
 h1:hover{

@@ -1,0 +1,25 @@
+*{
+	font-family: 'Ek Mukta', sans-serif;
+}
+
+.square{
+	display: inline-block;
+	position: relative;
+	width: 100px;
+	height: 100px;
+	border: 1px solid black;
+	text-align: center;
+}
+.downSquare{
+	top: 100px;
+}
+
+#sq1{
+	background-color: green;	
+}
+#sq2{
+	background-color: red;	
+}
+#sq3{
+	background-color: blue;	
+}
