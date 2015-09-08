@@ -18,8 +18,17 @@
 	border: 1px solid black;
 	text-align: center;
 }
+
+@keyframes drop{
+	0% {top: 0px;}
+	100% {top: 100px;}
+}
+
 .downSquare{
-	top: 100px;
+	animation: drop;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	webkit-animation-fill-mode: forwards;
 }
 
 #sq1{
