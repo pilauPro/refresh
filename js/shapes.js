@@ -3,11 +3,15 @@ var main = function(){
 	$('.square-control').mouseenter(function() {
 		dex = $(this).index()
 		square = $('.square').eq(dex)
-		if (! square.hasClass('downSquare')){
+
+		if (! (square.hasClass('downSquare') || square.hasClass('upSquare'))){
 			square.addClass('downSquare');
 		}
+		else if (square.hasClass('downSquare') && !square.hasClass('upSquare')){
+			square.addClass('upSquare');
+		}
 		else{
-			square.removeClass('downSquare');
+			square.removeClass('upSquare');
 		}
 	})
 }

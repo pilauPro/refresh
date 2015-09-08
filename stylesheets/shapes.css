@@ -23,6 +23,10 @@
 	0% {top: 0px;}
 	100% {top: 100px;}
 }
+@keyframes rise{
+	0% {top: 100px;}
+	100% {top: 0px;}
+}
 
 .downSquare{
 	animation: drop;
@@ -30,6 +34,13 @@
 	animation-fill-mode: forwards;
 	webkit-animation-fill-mode: forwards;
 }
+.upSquare{
+	animation: rise;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	webkit-animation-fill-mode: forwards;
+}
+
 
 #sq1{
 	background-color: green;	
