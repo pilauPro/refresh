@@ -18,29 +18,75 @@
 	border: 1px solid black;
 	text-align: center;
 }
-
+@keyframes deactivate{
+	0% {background-color: #00FF00;}
+	50% {background-color: #006600;}
+	100% {background-color: black;}
+}
+@keyframes active{
+	0% {background-color: black;}
+	50% {background-color: #006600;}
+	100% {background-color: #00FF00;}
+}
 @keyframes drop{
-	0% {top: 0px;}
-	100% {top: 100px;}
+	0% {
+		top: 0px;
+		opacity: 1;
+		}
+	50% {
+		opacity: .25;
+	}
+	100% {
+		top: 100px;
+		opacity: 1;
+		}
 }
 @keyframes rise{
-	0% {top: 100px;}
-	100% {top: 0px;}
+	0% {
+		top: 100px;
+		opacity: 1;
+		}
+	50% {
+		opacity: .25;
+	}
+	100% {
+		top: 0px;
+		opacity: 1;
+	}
 }
 
 .downSquare{
 	animation: drop;
-	animation-duration: 1s;
+	animation-duration: 1.25s;
+	animation-timing-function: ease-in-out;
+	-webkit-animation-timing-function: ease-in-out;
 	animation-fill-mode: forwards;
 	webkit-animation-fill-mode: forwards;
 }
 .upSquare{
 	animation: rise;
-	animation-duration: 1s;
+	animation-duration: 1.25s;
+	animation-timing-function: ease-in-out;
+	-webkit-animation-timing-function: ease-in-out;
 	animation-fill-mode: forwards;
 	webkit-animation-fill-mode: forwards;
 }
-
+.activeControl{
+	animation: active;
+	animation-duration: 1.25s;
+	animation-timing-function: ease-in-out;
+	-webkit-animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	webkit-animation-fill-mode: forwards;
+}
+.deactiveControl{
+	animation: deactivate;
+	animation-duration: 1.25s;
+	animation-timing-function: ease-in-out;
+	-webkit-animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+	webkit-animation-fill-mode: forwards;
+}
 
 #sq1{
 	background-color: green;	
@@ -50,4 +96,14 @@
 }
 #sq3{
 	background-color: blue;	
+}
+#sq4{
+	background-color: #B8FFDB;	
+}
+#sq5{
+	background-color: #B8A3E6;	
+}
+#sq6{
+	background-color: #E30070
+;	
 }
