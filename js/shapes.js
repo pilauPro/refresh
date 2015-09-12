@@ -1,5 +1,6 @@
+
+
 var main = function(){
-	// alert($('#sq2').css('display'))
 	$('.square-control').mouseenter(function() {
 		dex = $(this).index()
 		square = $('.square').eq(dex)
@@ -18,7 +19,15 @@ var main = function(){
 			$(this).removeClass('deactiveControl');
 		}
 	})
+	$('#title').click(function(){
+		$(this).animate({
+			opacity: '.2'},
+			1000, function() {
+			$(this).animate({opacity: '1'}, 500)
+		});
+	})
 }
+
 
 
 $(document).ready(main)
