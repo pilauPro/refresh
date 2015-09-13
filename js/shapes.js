@@ -5,7 +5,9 @@ var main = function(){
 		dex = $(this).index()
 		square = $('.square').eq(dex)
 
-
+		var timer = setTimeout(function(){
+			square.css('color', 'lightBlue');
+		}, 500)
 		if (! (square.hasClass('downSquare') || square.hasClass('upSquare'))){
 			$(this).addClass('activeControl');
 			square.addClass('downSquare');
@@ -19,15 +21,16 @@ var main = function(){
 			$(this).removeClass('deactiveControl');
 		}
 	})
+
 	$('#title').click(function(){
 		
 		changeColor($(this), ShowColor);
 
-		$(this).animate({
-			opacity: '.2'},
-			1000, function() {
-			$(this).animate({opacity: '1'}, 500)
-		});
+		$(this).animate({opacity: '.2'}, 1000, 
+			function() { $(this).animate({opacity: '1'}, 500,
+				function() { $(this).animate({opacity: '.2'}, 1000,
+					function() { $(this).animate({opacity: '1'}, 500)})})}
+		);
 
 		function changeColor(element, callback){
 			var timer = setTimeout(function(){
