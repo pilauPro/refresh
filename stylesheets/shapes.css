@@ -2,6 +2,23 @@
 	font-family: 'Ek Mukta', sans-serif;
 }
 
+.accent{
+	position: relative;
+	background-color: black;
+}
+#horz{
+	height: 3px;
+	width: 175px;
+	top: -40px;
+	right: -60
+}
+#vert{
+	height: 70px;
+	width: 3px;
+	right: -190;
+	top: -70;
+}
+
 .square-control{
 	display: inline-block;
 	width: 100px;
