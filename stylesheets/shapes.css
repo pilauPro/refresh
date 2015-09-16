@@ -35,6 +35,13 @@
 	border: 1px solid black;
 	text-align: center;
 }
+@keyframes grow{
+	25% {width: 275;}
+	50% {width: 375;}
+	75% {width: 275;}
+	100% {width: 175;}
+}
+
 @keyframes deactivate{
 	0% {background-color: #00FF00;}
 	50% {background-color: #006600;}
@@ -69,6 +76,10 @@
 		top: 0px;
 		transform:rotate(0deg);
 	}
+}
+
+.growLine{
+	animation: grow 5s ease-in-out infinite;
 }
 
 .downSquare{

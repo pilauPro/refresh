@@ -1,6 +1,9 @@
-
+function growLines(){
+	$('#horz').addClass('growLine');
+}
 
 var main = function(){
+	growLines();
 	$('.square-control').mouseenter(function() {
 		dex = $(this).index()
 		square = $('.square').eq(dex)
