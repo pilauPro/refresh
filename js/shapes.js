@@ -4,13 +4,18 @@ function growLines(){
 
 var main = function(){
 	growLines();
+
 	$('.square-control').mouseenter(function() {
 		dex = $(this).index()
 		square = $('.square').eq(dex)
+		subSquare = $('.sub-square').eq(dex)
 
+		
 		var timer = setTimeout(function(){
-			square.css('color', 'lightBlue');
-		}, 500)
+			subSquare.animate({opacity: '1'}, 1000)
+		}, 1250)
+
+
 		if (! (square.hasClass('downSquare') || square.hasClass('upSquare'))){
 			$(this).addClass('activeControl');
 			square.addClass('downSquare');

@@ -45,6 +45,18 @@
 	border: 1px solid black;
 	text-align: center;
 }
+
+.sub-square{
+	display: inline-block;
+	position: relative;
+	width: 100px;
+	height: 25px;
+	text-align: center;
+	background-color: black;
+	border: 1px solid black;
+	opacity: 0;
+}
+
 @keyframes grow{
 	25% {width: 275;}
 	50% {width: 375;}
@@ -98,6 +110,11 @@
 	top: -120px;
 }
 
+.sub-square-holder{
+	position: relative;
+	top: -10
+}
+
 .growLine{
 	animation: grow 5s ease-in-out infinite;
 }
@@ -135,22 +152,21 @@
 	webkit-animation-fill-mode: forwards;
 }
 
-#sq1{
+.square#sq1{
 	background-color: green;	
 }
-#sq2{
+.square#sq2{
 	background-color: red;	
 }
-#sq3{
+.square#sq3{
 	background-color: blue;	
 }
-#sq4{
+.square#sq4{
 	background-color: #B8FFDB;	
 }
-#sq5{
+.square#sq5{
 	background-color: #B8A3E6;	
 }
-#sq6{
-	background-color: #E30070
-;	
+.square#sq6{
+	background-color: #E30070;	
 }
