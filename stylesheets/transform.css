@@ -7,60 +7,64 @@
 }
 
 @-webkit-keyframes color {
-	from {background-color: white;}
 	to {background-color: blue;}
 }
 @-webkit-keyframes size {
-	from {
+	from { 
 		height: 100px;
 		width: 100px;
+		background-color: blue;
 	}
 	to {
 		height: 400px;
 		width: 400px;
+		background-color: blue;
 	}
 }
 
 @-webkit-keyframes rotate {
-	from { transform: rotate(0deg); }
-	to { transform: rotate(180deg); }
+	from {
+		transform: rotate(0deg); 
+		height: 400px;
+		width: 400px;
+		background-color: blue;
+	}
+	to { 
+		transform: rotate(180deg); 
+		height: 400px;
+		width: 400px;
+		background-color: blue;
+	}
 }
 
 
 
 .colorShape{
 	animation: color;
-	animation-duration: 2.25s;
-	animation-timing-function: ease-in-out;
-	-webkit-animation-timing-function: ease-in-out;
-	-webkit-animation-fill-mode: forwards;
-	-moz-animation-fill-mode: forwards;
-	-ms-animation-fill-mode: forwards;
-	-o-animation-fill-mode: forwards;
+	animation-duration: 1s;
+	/*-webkit-animation-fill-mode: forwards;*/
 	animation-fill-mode: forwards;
+
 }
 
 .resizeShape{
+/*	background-color: blue;*/
 	animation: size;
 	animation-duration: 2.25s;
 	animation-timing-function: ease-in-out;
-	-webkit-animation-timing-function: ease-in-out;
+/*	-webkit-animation-timing-function: ease-in-out;
 	-webkit-animation-fill-mode: forwards;
 	-moz-animation-fill-mode: forwards;
 	-ms-animation-fill-mode: forwards;
-	-o-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;*/
 	animation-fill-mode: forwards;
 }
 
 .rotateShape{
 	animation: rotate;
 	animation-duration: 2.25s;
-	animation-timing-function: ease-in-out;
-	-webkit-animation-timing-function: ease-in-out;
-	-webkit-animation-fill-mode: forwards;
-	-moz-animation-fill-mode: forwards;
-	-ms-animation-fill-mode: forwards;
-	-o-animation-fill-mode: forwards;
 	animation-fill-mode: forwards;
+/*	-webkit-animation-fill-mode: backwards;*/
+
 }
 
