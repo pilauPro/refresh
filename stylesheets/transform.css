@@ -24,13 +24,13 @@
 
 @-webkit-keyframes rotate {
 	from {
-		transform: rotate(0deg); 
+		transform: translateX(0) rotate(0);
 		height: 400px;
 		width: 400px;
 		background-color: blue;
 	}
 	to { 
-		transform: rotate(180deg); 
+		transform: translateX(450px) rotate(2turn);
 		height: 400px;
 		width: 400px;
 		background-color: blue;
@@ -62,7 +62,9 @@
 
 .rotateShape{
 	animation: rotate;
-	animation-duration: 2.25s;
+	animation-duration: 1.25s;
+	animation-timing-function: linear;
+	/*animation-iteration-count: 2;*/
 	animation-fill-mode: forwards;
 /*	-webkit-animation-fill-mode: backwards;*/
 
