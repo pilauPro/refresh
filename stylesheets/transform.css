@@ -37,6 +37,20 @@
 	}
 }
 
+@-webkit-keyframes rotateDu {
+	from {
+		transform: translateX(0) rotate(0);
+		height: 400px;
+		width: 400px;
+		background-color: blue;
+	}
+	to { 
+		transform: translateX(450px) rotate(2turn);
+		height: 400px;
+		width: 400px;
+		background-color: blue;
+	}
+}
 
 
 .colorShape{
@@ -63,10 +77,18 @@
 .rotateShape{
 	animation: rotate;
 	animation-duration: 1.25s;
-	animation-timing-function: linear;
-	/*animation-iteration-count: 2;*/
+	animation-timing-function: ease-in;
+	animation-iteration-count: 2;
 	animation-fill-mode: forwards;
-/*	-webkit-animation-fill-mode: backwards;*/
+	animation-direction: alternate;
+}
 
+.justRotate{
+	animation: rotateDu;
+	animation-duration: 1.25s;
+	animation-timing-function: ease-in;
+	animation-iteration-count: 2;
+	animation-fill-mode: forwards;
+	animation-direction: alternate;
 }
 
