@@ -19,18 +19,7 @@ function animate1(shape){
 }
 
 function animate2(shape){
-	shape.addClass('justRotate');
-	shape.one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function() {
-		shape.removeClass('justRotate');
-	});
-	// if (!shape.hasClass('justRotate')){
-	// 	shape.addClass('justRotate');
-	// }
-	// else {
-	// 	(shape.hasClass('justRotate'))
-	// 	shape.removeClass('justRotate');
-	// 	shape.one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function() {
-	// 		shape.addClass('justRotate');
-	// 	});
-	// }
+	var newone = shape.clone(true);
+	shape.before(newone);
+	newone.addClass('justRotate');
 }
