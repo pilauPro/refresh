@@ -10,12 +10,11 @@ $('#animateBtn').click(function(){
 })
 $('#globe').click(function(){
 	var ball = $(this)
-
 	if (ball.hasClass('rotateGlobe')){
 		animate2(ball, 'rotateGlobe');
 	}
 	else {
-		$(this).addClass('rotateGlobe');
+		ball.addClass('rotateGlobe');
 	}
 })
 
