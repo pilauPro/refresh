@@ -1,3 +1,31 @@
+.menu-bar{
+	width: 100px;
+	height: 30px;
+	border: 1px solid black;
+	text-align: center;
+	transition: background-color 2s;
+}
+
+.menu-bar:hover{
+	background-color: pink;
+}
+
+.dropdown{
+	display: none;
+	margin-top: 10px;
+	background-color: lightblue;
+	color: white;
+}
+
+ul{
+	list-style-type: none;
+}
+
+a:link{
+	text-decoration: none;
+	color: white;
+}
+
 #globe{
 	height: 200px;
 	width: 202px;

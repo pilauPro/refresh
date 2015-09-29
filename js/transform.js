@@ -1,3 +1,7 @@
+$('.menu-bar').click(function(){
+	$('.dropdown').toggle();
+})
+
 $('#animateBtn').click(function(){
 	var shape = $('#trans-shape')
 
