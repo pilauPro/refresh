@@ -1,7 +1,6 @@
 #globe{
 	height: 200px;
 	width: 202px;
-/*	border-radius: 100%;*/
 	margin-left: 100px;
 	margin-top: 100px;
 }
@@ -12,6 +11,15 @@
 	height: 100px;
 	width:	100px;
 	margin: 0 auto;
+}
+
+.dot{
+	display: inline-block;
+	position: absolute;
+	background-color: black;
+	height: 10px;
+	width: 10px;
+	border-radius: 100%;
 }
 
 #s1{
@@ -62,7 +70,7 @@
 		transform: translateX(0) rotate(0);
 	}
 	to { 
-		transform: translateX(450px) rotate(2turn);
+		transform: translateX(800px) rotate(1turn);
 	}
 }
 
